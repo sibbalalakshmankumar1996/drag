@@ -1,0 +1,111 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+@font-face{
+    font-family: Opensans-light;
+    src: url(fonts/OpenSans-Light.ttf);
+
+}
+@font-face {
+    font-family: Opensans-bold;
+    src: url(fonts/OpenSans-Bold.ttf);
+}
+
+.bg-container{
+    background-color:#000000;
+    overflow:hidden;
+}
+.priority-container, .thanks-section{
+    max-width:50%;
+    border-top:none;
+    border-right:none;
+    border-bottom:none;
+    border-left:1px solid red;
+    padding-left:16px;
+    height:80vh;
+    
+}
+.heading{
+    color:#ffffff;
+    font-size:40px;
+    font-family: Opensans-light;
+}
+.text{
+    color:#f2f4f7;
+    font-size:32px;
+}
+.box-container{
+    background-color:#212221;
+   width:34%;
+    padding:12px;
+    margin:4px;
+    border:none;
+}
+.box-text{
+    color:#ffffff;
+    display:inline-block;
+    width:70%;
+    font-family: Opensans-light;
+    font-size:16px;
+}
+.circles-container{
+    margin:0px;
+}
+.circle-row{
+    margin:-24px;
+    padding:0px;
+
+}
+.circle-shape{
+    width:170px;
+    height:170px;
+    overflow:hidden;
+    font-size:16px;
+    padding:30px;
+    border-radius:50%;
+    border:2px dashed #515651;
+    background-color:#121312;
+}
+.priority-num{
+    color:#515651;
+    font-size:48px;
+}
+.drag-text{
+    color:#515651;
+    font-size:16px;
+
+}
+.hold{
+    background-color:transparent;
+}
+.thanks-section{
+    max-width:50%;
+    display:none;
+
+}
+.mail-label{
+    color:#CBD1BE;
+}
+.form-control{
+    width:60%;
+}
+#user-mail{
+    background:transparent;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:1px solid #e1e3e6;
+}
+.submit-button{
+    margin-top:16px;
+    font-size:24px;
+    width:200px;
+    padding:12px 0px;
+    background-color:#F43535;
+    border:none;
+    color:#f1f1f1;
+    font-family: poppins-semibold;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/5.0.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <title>Drag and drop</title>
+</head>
+
+<body>
+    <main class="bg-container d-flex flex-row justify-content-around pt-4 pb-4">
+        <section id="prioritySec" class="priority-container">
+            <h1 class="heading">Set your Priority</h1>
+            <p class="text">For the Experience that Matters</p>
+            <div class="d-flex flex-row flex-wrap w-100">
+                <div id="drag1" class="box-container" draggable="true" ondragstart="drag(event)">
+                    <span class="box-text">Be Empowered. Get Recognized</span>
+                </div>
+                <div id="drag2" class="box-container" draggable="true" ondragstart="drag(event)">
+                    <span class="box-text">Think like an Entrepreneur</span>
+                </div>
+                <div id="drag3" class="box-container" draggable="true" ondragstart="drag(event)">
+                    <span class="box-text">Flexibility to perform</span>
+                </div>
+                <div id="drag4" class="box-container" draggable="true" ondragstart="drag(event)">
+                    <span class="box-text">Be Yourself, Be the Change</span>
+                </div>
+                <div id="drag5" class="box-container" draggable="true" ondragstart="drag(event)">
+                    <span class="box-text">Live Life, Strike a Balance</span>
+                </div>
+                <div id="drag6" class="box-container" draggable="true" ondragstart="drag(event)">
+                    <span class="box-text">Employee First, Employee Always</span>
+                </div>
+                <div id="drag7" class="box-container" draggable="true" ondragstart="drag(event)">
+                    <span class="box-text">Make a Difference</span>
+                </div>
+                <div id="drag8" class="box-container" draggable="true" ondragstart="drag(event)">
+                    <span class="box-text">A Learning curve for Everyone</span>
+                </div>
+                <div id="drag9" class="box-container" draggable="true" ondragstart="drag(event)">
+                    <span class="box-text">Learn New Technologies,</span>
+                </div>
+                <div id="drag10" class="box-container" draggable="true" ondragstart="drag(event)">
+                    <span class="box-text">Endless Boundaries</span>
+                </div>
+            </div>
+        </section>
+        <section id="thanksSec" class="thanks-section">
+            <div>
+                <h1 class="heading">Thanks for...</h1>
+                <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div>
+                <div>
+                    <label class="mail-label">Enter Your Mail Id</label>
+                    <input type="email" class="form-control" id="user-mail" />
+                </div>
+                <div>
+                    <button type="submit" class="submit-button btn-block">Submit <i
+                            class="fa-solid fa-arrow-right-long white-arrow"></i></button>
+                </div>
+            </div>
+        </section>
+        <section class="circles-container">
+            <div class="circle-row d-flex flex-row justify-content-center align-items-center">
+                <div id="drop1" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    class="circle-shape priority-num text-center d-flex flex-column justify-content-center">1<br /><span
+                        class="drag-text">Drag & drop here</span>
+                </div>
+            </div>
+            <div class="circle-row d-flex flex-row justify-content-center align-items-center">
+                <div id="drop2" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    class="circle-shape priority-num text-center d-flex flex-column justify-content-center">
+                    2<br /><span class="drag-text">Drag & drop here</span>
+                </div>
+                <div id="drop3" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    class="circle-shape priority-num text-center d-flex flex-column justify-content-center">
+                    3<br /><span class="drag-text">Drag & drop here</span>
+                </div>
+            </div>
+            <div class="circle-row d-flex flex-row justify-content-center align-items-center">
+                <div id="drop4" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    class="circle-shape priority-num text-center d-flex flex-column justify-content-center">
+                    4<br /><span class="drag-text">Drag & drop here</span>
+                </div>
+                <div id="drop5" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    class="circle-shape priority-num text-center d-flex flex-column justify-content-center">
+                    5<br /><span class="drag-text">Drag & drop here</span>
+                </div>
+                <div id="drop6" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    class="circle-shape priority-num text-center d-flex flex-column justify-content-center">
+                    6<br /><span class="drag-text">Drag & drop here</span>
+                </div>
+            </div>
+            <div class="circle-row d-flex flex-row justify-content-center align-items-start">
+                <div id="drop7" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    class="circle-shape priority-num text-center d-flex flex-column justify-content-center">
+                    7<br /><span class="drag-text">Drag & drop here</span>
+                </div>
+                <div id="drop8" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    class="circle-shape priority-num text-center d-flex flex-column justify-content-center">
+                    8<br /><span class="drag-text">Drag & drop here</span>
+                </div>
+                <div id="drop9" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    class="circle-shape priority-num text-center d-flex flex-column justify-content-center">
+                    9<br /><span class="drag-text">Drag & drop here</span>
+                </div>
+                <div id="drop10" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    class="circle-shape priority-num text-center d-flex flex-column justify-content-center">
+                    10<br /><span class="drag-text">Drag & drop here</span>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <script src="https://cdn.usebootstrap.com/bootstrap/5.0.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.usebootstrap.com/bootstrap/5.0.1/js/bootstrap.bundle.min.js"></script>
+    <script src="drag.js"></script>
+</body>
+
+</html>
